@@ -1,0 +1,383 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allison&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+/* :root{
+    --dark-blue:#0a1d3c;
+    --light-grey:#e5e5e5;
+    --white:#fff;
+    --light-peach:#f9e3bc;
+     --dark--grey:#3e3f43;
+     --light--black:#1d1d1d;     
+} */
+.section1{
+    min-height: 100vh;
+    width: 100%;
+   
+}
+nav{
+    width: 100%;
+    height: 15vh;
+    display: flex;      
+    justify-content: space-between;
+    align-items:center ;
+    position: fixed;
+    z-index: 50;
+    background-color: #E9EEF6;
+    
+}
+header{
+    width: 80%;
+    height: calc(87vh);
+    justify-content: space-evenly;
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+.nav_links{
+    display: flex;
+   margin-right: 3rem;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    margin-left: 2.5rem;
+    color: #3e3f43;
+    position: relative;
+       
+}
+.onleplus-img{
+    width: 40rem;
+    height: 35rem;
+    margin-top: 13rem;
+
+}
+.logo{
+    font-family: 'Allison', cursive;
+    font-size: 3.3rem;
+    color: #0a1d3c;margin-left: 2.5rem;
+}
+.contenet{
+    margin-top: 9.2rem;
+
+}
+.medimg{
+    display: none;
+}
+.heding{
+    font-size: 3.5rem;
+    color: #0a1d3c;
+}
+.icons{
+    display: flex;
+}
+
+.description{
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    color:#3e3f43 ;
+}
+.price{
+    font-size: 1.5rem;
+    margin: .8rem 0;
+}
+.btn-container{
+    display: flex;
+}
+.buy-btn,.cart-btn{
+    font-size: 1.1rem;
+    border-radius: .2rem;
+    border: none;
+    cursor: pointer;
+    margin-top: 3.5rem;
+    padding: 1rem 1.8rem;
+    transition: transform .5s ease-in-out;
+   
+}
+.buy-btn{
+    background-color: #e5e5e5;
+}
+.cart-btn{
+    background-color: #0a1d3c;
+    color: white;
+    
+}
+.buy-btn:hover,.shop-btn:hover{
+   transform: scale(1.1);
+   cursor: pointer;
+}
+.cart-btn:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.selected-link{
+    display: flex;
+}
+.selected-link li a::after,.nav_links li .present::after{
+    content: "";
+    background: rgb(21, 21, 21);
+    position: absolute;
+    height: .15rem;
+    width: 100%;
+    left: 0;
+    bottom: -5px;
+    transition: transform 0.5s ease;
+    transform: scalex(0);
+
+}
+.selected-link li a:hover::after ,.nav_links li .present::after{
+    transform: scaleX(1);
+}
+.line{
+    background:#3e3f43 ;
+    width: 2rem;
+    height: .2rem;
+    margin: .35rem;
+}
+.menu{
+    cursor: pointer;
+    display: none;
+}
+
+
+
+/* Section two */
+.section2{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.section2-container{
+    background: peachpuff;
+    width: 100%;
+    height: 60vh;
+    transform: skewY(-6deg);
+}
+.inner-img{
+    width: 35rem;
+    margin-bottom: 5.8rem;
+    
+ 
+}
+.inner{
+    transform: skewY(6deg);
+    width: 80%;
+    margin: auto;
+}
+.section2-container,.inner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section2-heding{
+    color: #3e3f43;
+    font-size: 3.5rem;
+ 
+}
+.section2-contenet{
+    font-size: 1rem;
+    color: #3e3f43;
+    line-height: 1.8rem;
+    max-width: 80%;
+}
+.section2-price{
+    font-size: 1.6rem;
+    color: #3e3f43;
+    margin: .9rem 0;
+}
+.section2-btn{
+    padding: .9rem 1.7rem;
+    border: .1rem solid rgb(71, 70, 70);
+    border-radius: .5rem;
+    font-size: 1.1rem;
+    margin-top: 1.5rem;
+    background: transparent;
+    transition: transform .8s ease;
+}
+.section2-btn:hover{
+    color: white;
+    background-color: #0a1d3c;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+/* section3 */
+.section3{
+    height: 100vh;
+    width: 100%;
+   
+}
+.section3-heding{
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 3rem;
+   
+}
+.box-img{
+    width: 20rem;
+}
+.section3-box{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    gap: 4rem;
+    justify-content: center;
+}
+.box1{
+    background: lightgrey;
+    height: 33rem;
+    padding: 2rem;
+}
+.box1-price{
+    font-size: 1.2rem;
+
+}
+.more-details{
+    padding: .9rem 1.7rem;
+    border: .1rem solid rgb(71, 70, 70);
+    border-radius: .5rem;
+    font-size: 1.1rem;
+    margin-top: 1.5rem;
+    background: transparent;
+    transition: transform .8s ease;
+}
+.more-details:hover{
+    color: white;
+    background-color: #0a1d3c;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+/* section4 */
+
+.sect-ion4{
+    height: 80vh;
+    width: 100%;  
+    display: flex;
+    margin-top: 5rem;
+    align-items: center; 
+}
+.section-img{
+    width: 100%;
+    height: 80vh;
+    background-image: url(./img/offer.webp);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center
+}
+
+
+.offer{
+    font-size: 4rem;
+    color: #f3efef;
+    font-family: 'Allison', cursive;
+    text-transform: uppercase;
+
+}
+.deals{
+    font-size: 4rem;
+    color: white;
+    margin-bottom: 1rem;
+
+}
+.shop-btn{
+    font-size: 1.1rem;
+    padding: 1rem 1.7rem;
+    background-color:  rgb(201, 182, 165);
+    transition: transform .5s ease-in-out;
+    border: none;
+
+}
+
+
+/* footer */
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    height: 20vh;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+ 
+  
+
+
+
+
+
+
+
+
+
+
+
+/* Media Q */
+@media screen and (max-width: 500px) {
+    .onleplus-img{
+        display: none;
+    }
+  
+    .medimg{
+        display: block;
+        height: 300px;
+        width: 300px;
+    }
+    .nav_links{
+        display: none;
+    }
+    .menu{
+        display: block;
+        margin-right: 0.5rem;
+    }
+    .heding{
+        font-size: 2.5rem;
+        margin-top: 10rem;
+    }
+    header{
+        justify-content: flex-start;
+    }
+    .btn-container{
+        
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+    .inner-img{
+        display: none;
+    }
+    .section2-container{
+       margin-top: 3rem;
+    }
+
+    /* section 3 */
+    .box-img{
+        width: 18.5rem;
+    }
+
+    /* section4 */
+    .sect-ion4{
+        margin-top: 75rem;
+    }
+    /* footer */
+    
+
+}
+
